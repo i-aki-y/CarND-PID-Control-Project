@@ -53,6 +53,6 @@ Calculated $E^{cte}$ values with parameters examined above are shown in Figure 4
 ![Fig4](./result/fig4.png)
 Figure 4: Approximate total cte value (smaller value is better) with different parameters.
 
-### Scripts
+### Scripts for the result
 
 The script which create the figures are given in `./result/PIDControlAnalysis.ipynb`.
