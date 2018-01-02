@@ -1,6 +1,8 @@
 #ifndef PID_H
 #define PID_H
 
+#include <deque>
+#include <fstream>
 class PID {
 public:
   /*
@@ -11,6 +13,16 @@ public:
   double d_error;
 
   /*
+  * cte
+  */
+  double cte_diff;
+  double cte_integ;
+  int max_cte_hist_size;
+  std::deque<double> cte_hist;
+
+  std::ofstream ofs;
+
+    /*
   * Coefficients
   */ 
   double Kp;
